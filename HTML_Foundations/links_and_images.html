@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links and Images</title>
+</head>
+<body>
+    <h1>Links and Images</h1>
+    <h2>Anchor Elements:</h2>
+    <p>
+        Anchor elements are used to create a link in html. They are difined by using '< a >' tags<br>
+        with text or other html elements in between that becomes clickable. This clickable text<br>
+        or html element will direct you to the links new page.<br>
+        <br>
+        Example: < a >Homepage< /a ><br>
+        <br>
+        The above example would set up a link to the 'Homepage' but this doesnt actually do<br>
+        anything as an anchor tag doesnt know were its linking to on its own. We need to give<br>
+        a destination for the link also. This is done by using a HTML attribute.<br>
+        A HTML attribute is always placed in the opening tag of an element and is made up of<br>
+        a name followed by a value even though a value isnt actually always needed with some<br>
+        attributes. Attributes are used to give additional information to html elements.<br>
+        The above element needs a 'href' attribute in the opening anchor tag with the value being<br>
+        the destination we want the link to go to.<br>
+        <br>
+        Example: < a href="www.homepage.com" >Homepage< /a ><br>
+        <br>
+        In this example the anchor tag has the href attribute with the web address being the value<br>
+        followed by 'Homepage' as the clickable text and finally finishing with closing tags.
+    </p>
+    <h3>Opening the links in a new tab:</h3>
+    <p>
+        The above example opens the link in the same tab your currently working in.<br>
+        To change this all we need is another attribute to be placed in the opening anchor tag,<br>
+        this attribute is the 'Target' attribute and is usually placed after the 'href' attribute.<br>
+        The value of 'Target' by default is '_self' which means the link will open inside your<br>
+        current working tab but if set to '_blank' then the link will open in a black tab/window.
+    </p>
+    <p>
+        If opening a link in a new tab or window, it is best practice to use the 'rel' attribute also<br>
+        'rel' with a value of 'noopener' will stop any interactions between the new and old tabs.<br>
+        This is ideal for security purposes because without it, the new page can use Javascript<br>
+        to manipulate the original page. This causes a major security risk.
+    </p>
+    <p>
+        To be completely safe the attribute 'rel' should just have the value of 'noreferrer'.<br>
+        'noreferrer' is the same as 'noopener' but adds the added benefit of blocking the<br>
+        new page from knowing were the user came from originally as well as the interacting<br>
+        with the previous page.
+    </p>
+    <h2>Absolute and Relative Links:</h2>
+    <p>
+        There are two kinds of links that we will generally make.
+        <ul>
+            <li>Links to pages on other websites via the internet</li>
+            <li>Links to pages located on own website</li>
+        </ul>
+    </p>
+    <h3>Absolute Links:</h3>
+    <p>
+        Absolute links are used to link pages from other websites on the internet.<br>
+        This link will always contain a 'Scheme' and 'Domain' of the destination.<br>
+        Scheme is like 'http://' and the domain is the 'Google.com' for example.
+    </p>
+    <h3>Relative Links:</h3>
+    <p>
+        Relative links are used to link to other pages on our own website. They do not include<br>
+        a domain name since it is a page on the same site and assumes it will be the same.<br>
+        Relative links only include the file path to the other page relative to the page the link<br>
+        is created on.
+    </p>
+    <h2>Images:</h2>
+    <p>
+        To display an image in html we use the '< img >' element. The image element is a void<br>
+        element so there is no closing tags as the element would be empty.<br>
+        This is because we dont wrap the image content in tags, we embed an image to the page<br>
+        using the 'SRC' attribute. The src attribute tells the browser were the image file is<br>
+        located, just like the href attribute does. Images can be embedded using both absolute<br>
+        and realtive paths.
+    </p>
+    <h3>Alt attribute:</h3>
+    <p>
+        Aswell as the src attribute to link the image to the page, you will need to provide an<br>
+        'alt' attribute after the src attribute. The alt attribute helps describe the image to the<br>
+        user if using say a screen reader or if the image fails to load. The description<br>
+        needs to be as descriptive as possible.
+    </p>
+    <h3>Image Size Attribute:</h3>
+    <p>
+        Image size attributes are not required but help with layout. It is good practice to specify<br>
+        the height and width dimentions of every image. These are usually altered with CSS<br>
+        though.
+    </p>
+    
+</body>
+</html>

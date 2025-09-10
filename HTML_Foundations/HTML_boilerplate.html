@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Boiler Plate</title>
+</head>
+<body>
+    <h1>HTML Boiler Plate</h1>
+
+    <p>
+        All HTML documents follow the same structure also known as 'boilerplate' that needs to<br>
+        be in place before anything can be done. Firstly you would need to create a html<br>
+        document using the '.html' extension. Most homepages would be called 'index' so your<br>
+        first html document should be called <strong>'index.html'</strong>
+    </p>
+
+    <p>
+        Every blank html page will start with a 'DOCTYPE' declaration. This is to help the<br>
+        browser determine which HTML version is being used. The latest at present is HTML5,<br>
+        The DOCTYPE for this version is <strong>'< !DOCTYPE html >'</strong>
+    </p>
+
+    <p>
+        Following the doctype declaration we need to provide the '< html >' element.<br>
+        This element is known as the root element of the document, meaning all other elements<br>
+        will be a decendant of it. This becomes important when we start using Javascript but<br>
+        for now this just needs to be included in every html document.<br>
+        Side Note... Majority of the time html elements have a 'lang' attribute along side it. this<br>
+        is kind of like an 'Option'.<br>
+        <br>
+        Example: < html lang="en" >< /html ><br>
+        <br>
+        The lang attribute specifies which language the text content is in that element. So the html<br>
+        document is going to be set to english according to the example above. 'en' is English.<br>
+        providing this information allows assistive technologies to adapt accurately for instance<br>
+        Screen readers.
+    </p>
+
+    <p>
+        After the html element, usually the 'Head' element comes next holding all the important<br>
+        Meta-information about the webpage. The head element should not hold anything that<br>
+        needs to be displayed on the webpage.
+    </p>
+
+    <p>
+        The Head element should be place inside of the HTML element and starts with the<br>
+        'Meta' and 'Title' elements inside of itself usually. The meta element sets the charset<br>
+        encoding of the webpage and is usually set to 'UTF-8' by default.<br>
+        Example: < meta charset="UTF-8" >
+        <br>
+        Notice the Meta element is a self closing element so doesnt have closing tags!<br>
+        Setting the encoding ensures the webpage will display special symbols in the browser.
+    </p>
+
+    <p>
+        The second part of the head element is the Title tags which is an element that produces<br>
+        The webpages title in the browsers tabs. If we didnt have this then the tab would just<br>
+        display the filename instead of a human readable title.<br>
+        Example: < title >Homepage< /title ><br>
+        Here the title of the webpage is 'Homepage' as opposed to 'index.html'<br>
+        The more webpages open, the more you will umderstand the usefulness of titles.
+    </p>
+
+    <p>
+        There are more that can go into a head element but these two are the more important<br>
+        at the moment. The only other thing that needs to be added to a boilerplate is the<br>
+        'Body' element. This element goes in between the HTML tags but after the head tags<br>
+        and it holds all the content which will be visable on the browsers webpage.
+    </p>
+
+    <h2>Top Tip</h2>
+    <p>
+        VSCode has a shortcut for a boilerplate template.<br>
+        Selecting an '!' on an empty document and pressing tab to auto complete will provide a<br>
+        template boilerplate already filled in and setup.
+    </p>
+
+    
+</body>
+</html>
